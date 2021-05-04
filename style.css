@@ -68,18 +68,24 @@ img {
 
 .link {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .btn {
   background-color: var(--bg);
   border-radius: 20px;
-  border: 3px solid transparent;
-  font-size: 1rem;
+  border: 2px solid transparent;
   text-decoration: none;
   margin-top: 60px;
-  transition: border 0.3s;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  border: 2px solid var(--bg);
+  color: var(--bg);
 }
 
 .link:focus {
@@ -88,33 +94,31 @@ img {
 }
 
 .btn-sedan:hover {
-  border: 3px solid var(--dark);
+  background-color: var(--orange);
 }
 
-.btn-lux:hover,
 .btn-suv:hover {
-  border: 3px solid var(--orange);
+  background-color: var(--dark);
+}
+
+.btn-lux:hover {
+  background-color: var(--verydark);
 }
 
 .link-sedan {
   color: var(--orange);
 }
 
-.link-sedan:hover {
-  color: var(--dark);
-}
-
 .link-suv {
   color: var(--dark);
 }
 
-.link-suv:hover,
-.link-lux:hover {
-  color: var(--orange);
-}
-
 .link-lux {
   color: var(--verydark);
+}
+
+.link:hover {
+  color: var(--bg);
 }
 
 @media screen and (max-width: 686px) {

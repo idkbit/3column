@@ -67,13 +67,19 @@ img {
 }
 
 .link {
-  background-color: var(--bg);
+  text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
+}
+
+.btn {
+  background-color: var(--bg);
   border-radius: 20px;
+  border: 3px solid transparent;
   font-size: 1rem;
   text-decoration: none;
   margin-top: 60px;
+  transition: border 0.3s;
 }
 
 .link:focus {
@@ -81,12 +87,30 @@ img {
   background-color: var(--text);
 }
 
+.btn-sedan:hover {
+  border: 3px solid var(--dark);
+}
+
+.btn-lux:hover,
+.btn-suv:hover {
+  border: 3px solid var(--orange);
+}
+
 .link-sedan {
   color: var(--orange);
 }
 
+.link-sedan:hover {
+  color: var(--dark);
+}
+
 .link-suv {
   color: var(--dark);
+}
+
+.link-suv:hover,
+.link-lux:hover {
+  color: var(--orange);
 }
 
 .link-lux {

@@ -72,6 +72,7 @@ img {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: 700;
+  border-radius: 20px;
 }
 
 .btn {
@@ -88,9 +89,14 @@ img {
   color: var(--bg);
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .link:focus {
   outline: 0;
-  background-color: var(--text);
+  border-color: var(--bg);
+  color: var(--bg);
 }
 
 .btn-sedan:hover {
@@ -109,12 +115,24 @@ img {
   color: var(--orange);
 }
 
+.link-sedan:focus {
+  background-color: var(--orange);
+}
+
 .link-suv {
   color: var(--dark);
 }
 
+.link-suv:focus {
+  background-color: var(--dark);
+}
+
 .link-lux {
   color: var(--verydark);
+}
+
+.link-lux:focus {
+  background-color: var(--verydark);
 }
 
 .link:hover {
